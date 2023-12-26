@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Creepster&display=swap");
+body {
+  background-color: pink;
+}
+
+.background-div {
+  width: 1200px;
+  height: 600px;
+  margin: 100px auto;
+  background-image: url("/images/background.jpeg");
+  background-color: pink;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 10px rgb(247, 111, 179);
+}
+
+p {
+  position: absolute;
+  font-family: fantasy;
+  font-size: 32px;
+  color: rgb(242, 137, 155);
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+button {
+  background-color: rgb(247, 111, 179);
+  border-radius: 5px;
+  width: 50px;
+  font-family: fantasy;
+  font-weight: 700;
+  cursor: pointer;
+  color: white;
+}
+.button1 {
+  position: absolute;
+  top: 80%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes jump {
+  0% {
+    top: 80%;
+  }
+  50% {
+    left: 20%;
+  }
+  60% {
+    top: 25%;
+  }
+}
+@keyframes jump1 {
+  0% {
+    top: 80%;
+  }
+  50% {
+    left: 50%;
+  }
+  60% {
+    top: 45%;
+  }
+}
+.button2 {
+  position: absolute;
+  top: 80%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  animation: jump 3s ease infinite;
+}
+
+.button2:hover {
+  animation: jump1 1s ease forwards;
+}
+@keyframes bouncing {
+  0% {
+    top: 45%;
+  }
+  50% {
+    top: 50%;
+  }
+  100% {
+    top: 45%;
+  }
+}
+@keyframes bouncing2 {
+  0% {
+    top: 55%;
+  }
+  50% {
+    top: 60%;
+  }
+  100% {
+    top: 55%;
+  }
+}
+.starticon {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: bouncing 2s ease-in-out infinite;
+}
+.happyjump {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: bouncing2 3s ease-in-out infinite;
+}
+.congratstext {
+  position: absolute;
+  font-family: fantasy;
+  font-size: 32px;
+  color: rgb(242, 137, 155);
+  top: 40%;
+  left: 51%;
+  transform: translate(-50%, -50%);
+}
+@keyframes happyiconn {
+  0% {
+    left: -20%;
+  }
+  25% {
+    top: 70%;
+  }
+  30% {
+    top: 65%;
+  }
+  35% {
+    top: 70%;
+  }
+  40% {
+    top: 65%;
+  }
+  45% {
+    top: 70%;
+  }
+  50% {
+    top: 65%;
+  }
+  55% {
+    top: 70%;
+  }
+  60% {
+    top: 65%;
+  }
+  65% {
+    top: 70%;
+  }
+  75% {
+    top: 65%;
+  }
+  80% {
+    top: 70%;
+  }
+  85% {
+    top: 65%;
+  }
+  90% {
+    top: 70%;
+  }
+  95% {
+    top: 65%;
+  }
+  100% {
+    left: 100%;
+    top: 70%;
+  }
+}
+.happyicon {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 65%;
+  animation: happyiconn 4s ease-in-out infinite;
+}
+
+@keyframes proud {
+  50% {
+    left: 5%;
+    transform: rotate(360deg);
+  }
+}
+.proudicon {
+  position: absolute;
+  width: 100px;
+  height: 110px;
+  left: 2%;
+  top: 2%;
+  animation: proud 5s infinite;
+  animation-direction: alternate;
+}
+@keyframes confetti {
+  0% {
+    top: -80%;
+  }
+  50% {
+    top: 0%;
+  }
+  100% {
+    top: 0%;
+  }
+}
+.confetti {
+  position: absolute;
+  width: 400px;
+  height: 410px;
+  left: 35%;
+  top: -80%;
+  animation: confetti 2s infinite;
+}
+@keyframes tryagainanimation {
+  0% {
+    font-size: 38px;
+    color: pink;
+  }
+  50% {
+    font-size: 54px;
+    color: rgb(247, 111, 179);
+  }
+  100% {
+    font-size: 38px;
+    color: pink;
+  }
+}
+a {
+  position: absolute;
+  color: pink;
+  font-family: creepster, sans-serif;
+  font-size: 38px;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: tryagainanimation 2s ease-in-out infinite;
+}
+
+@keyframes angeranimation {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes angeranimation2 {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.anger {
+  position: absolute;
+  width: 200px;
+  height: 205px;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: angeranimation2 1s ease infinite;
+}
+.anger2 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: angeranimation 1s ease infinite;
+}
