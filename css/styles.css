@@ -7,7 +7,7 @@ body {
   width: 1200px;
   height: 600px;
   margin: 100px auto;
-  background-image: url("/images/background.jpeg");
+  background-image: url("../images/background.jpeg");
   background-color: pink;
   background-position: center;
   background-repeat: no-repeat;
